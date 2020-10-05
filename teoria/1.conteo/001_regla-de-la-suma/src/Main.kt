@@ -34,7 +34,20 @@ fun main() {
 
 object Calcular: ActionListener {
     override fun actionPerformed(e: ActionEvent?) {
-        TODO("Not yet implemented")
+        try {
+            val tareas = JOptionPane.showInputDialog(null, "Ingrese cantidad de tareas", "Pregunta",
+                JOptionPane.QUESTION_MESSAGE).toInt()
+
+            val formas = mutableListOf<Int>()
+            for(i in 0 until tareas) {
+                formas.add(JOptionPane.showInputDialog(null, "Ingrese la cantidad de formas en las que se puede realizar la tarea" +
+                        " ${i+1}", "Pregunta", JOptionPane.QUESTION_MESSAGE).toInt())
+            }
+            JOptionPane.showMessageDialog(null, "Todas sus tareas se pueden realizar de ${formas.sum()} formas")
+        }catch (nulo: NullPointerException) {
+        }catch (format: NumberFormatException) {
+            JOptionPane.showMessageDialog(null, "El valor ingresado no es un número", "Error", JOptionPane.ERROR_MESSAGE)
+        }
     }
 
 }
