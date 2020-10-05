@@ -1,4 +1,9 @@
-# matematicas-discretas-y-combinatoria
-teoría, teoría aplicada, y algunas soluciones a ejercicios 🧭.
-# teoría
+# ✨ Matematicas discretas y combinatoria
+🧭 Teoría, teoría aplicada, y algunas soluciones a ejercicios.  
 ![](readme/reglaDeLaSuma.png)
+
+# 📝 Teoría
+### 🏹 Principios de la combinatoria
+- Regla de la suma.
+- Regla del producto.
+- Permutación.
